@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'lexend deca';
+    color: white;
+}
+
+body{
+    max-width: 144rem;
+    height: 100vh; 
+    padding: 0px 3rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    
+}
+
+.left-section{
+    background-color: hsl(31, 77%, 52%);
+    height: 40rem;
+    width: 25rem;
+    padding: 4rem;
+    position: relative;
+    flex-wrap: wrap;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+.left-section button{
+    position: absolute;
+    bottom: 5rem;
+    color:hsl(31, 77%, 52%);
+
+}
+
+
+h1{
+    padding: 3rem 0rem;
+}
+
+p{ 
+    font-size: 1.5rem;
+    color:hsla(0, 0%, 100%, 0.75) ;
+    font: 'Big Shoulders Display';
+}
+
+button{
+    border-radius: 3rem;
+    height: 3.7rem;
+    width: 12rem;
+    background: white;
+    border: none;
+    font-size: 1.2rem;
+}
+
+
+.middle-section{
+    background-color:hsl(184, 100%, 22%);
+    height: 40rem;
+    width: 25rem;
+    padding: 4rem;
+    flex-wrap:wrap;
+    flex-direction: column;
+    position: relative;
+}
+
+.middle-section button{
+    position: absolute;
+    bottom: 5rem;
+    color: hsl(184, 100%, 22%);
+
+}
+
+.right-section{
+    background-color:hsl(179, 100%, 13%);
+    height: 40rem;
+    width: 25rem;
+    padding: 4rem;
+    flex-wrap:wrap;
+    flex-direction: column;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    position: relative;
+    
+}
+
+.right-section button{
+    position: absolute;
+    bottom: 5rem;
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 780px){
+    body{
+        padding: 2rem;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        display:block;
+    } 
+
+    .left-section{
+        border-radius: 3% 3% 0 0;
+
+    }
+
+    .right-section{
+        border-radius: 0 0 3% 3%;
+    }
+}
